@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Sustainable kit</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="utils.css">
+    </head>
+    <body class="overflow-x-hidden">
+        <div class="container mx-auto">
+            <header>
+                <nav class="flex justify-between">
+                    <div class="logo font-bold flex items-center text-blue">
+                        <img class="symbol" src="cartoon.png" alt="" >
+                        The EARTHLY Sustainable kit</div>
+                    <ul class="navbar flex items-center">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact-us</li>
+                        <li><button class="btn">View Cart</button></li><br>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
+            <main class="min-h-screen ">
+                <section class="section1">
+                    <div class="flex">
+                        <div class="topleft flex flex-col justify-center  px-2">
+                            <div class="text-center">
+                                <img class="cube" src="cube.png" alt="">
+                            </div>
+                           <h1 class="my-1 text-center">The best products of the Sustainable kit at affordable price are here.</h1>
+                            <p class="text-center">Let's make India <b class="green">Green</b> and less polluted by using our Eco-friendly Products.</p><br>
+                            <p class="deal text-center">The deal is upto 15 March.<b class="hurry">HURRY UP!!</b> <span id="demo"></span></p>
+                            <div class="buttons">
+                                <button class="btn">Buy now</button>
+                                <button class="btn">Contact Us</button>
+                            </div>
+        
+                        </div>
+                        <div class="topright flex justify-center">
+                            <img class="eco" src="eco.png" alt="">
+                        </div>
+                    </div>
+                </section>
+                <hr>
+                <section class="section2">
+                    <h1 class="text-center my-2"><b>PRICING</b></h1>
+                    
+                    <div class="boxes flex flex reveal">
+                        <div class="box">
+                            <img class="p11" src="p1.png" alt="">
+                            <h4>Plant based reusable cups</h4>
+                            <h4><s>€2.99 </s>€2.39</h4>
+                            <h4><button class="btn">Add to cart</button></h4>
+                        </div>
+                        <div class="box">
+                            <img class="p11" src="p2.png" alt="">
+                            <h4>Sustainability starter kit</h4>
+                            <h4>€10.99</h4>
+                            <h4><button class="btn">Add to cart</button></h4>
+                        </div>
+                        <div class="box">
+                            <img class="p11" src="p3.png" alt="">
+                            <h4>Reusable bamboo straws</h4>
+                            <h4>€1.99</h4>
+                            <h4><button class="btn">Add to cart</button></h4>
+                        </div>
+                    </div>
+                    <div class="boxes flex flex reveal">
+                        <div class="box">
+                            <img class="p11" src="p4.png" alt="">
+                            <h4>Natural Bamboo Loofah</h4>
+                            <h4><s>€3.99 </s>€2.99</h4>
+                            <h4><button class="btn">Add to cart</button></h4>
+                        </div>
+                        <div class="box">
+                            <img class="p11" src="p5.png" alt="">
+                            <h4>Bamboo Toothbrush(set of 2)</h4>
+                            <h4><s>€4.49 </s>€3.59</h4>
+                            <h4><button class="btn">Add to cart</button></h4>
+                        </div>
+                        <div class="box">
+                            <img class="p11" src="p6.png" alt="">
+                            <h4>Plant Based Reusable Containers</h4>
+                            <h4>€2.99</h4>
+                            <h4><button class="btn">Add to cart</button></h4>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+            </main>
+            <footer>
+                Copyright &copy; EarthlySustainable.com | All rights reserved
+            </footer>
+        </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll',reveal);
+
+            function reveal(){
+                var reveals=document.querySelectorAll('.reveal');
+
+                for(var i=0;i<reveals.length;i++){
+
+                    var windowheight=window.innerHeight;
+                    var revealtop=reveals[i].getBoundingClientRect().top;
+                    var revealpoint=150;
+
+                    if(revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
